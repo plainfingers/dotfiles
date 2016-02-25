@@ -101,7 +101,7 @@ else
   "colorscheme macvim
   "colorscheme ir_black
   "colorscheme tir_black
-  colorscheme plainfingers_black   "this is THE colorscheme i use
+  colorscheme black_is_the_color   "my colorscheme
   "colorscheme getafe
   "colorscheme native
   "colorscheme demoncag
