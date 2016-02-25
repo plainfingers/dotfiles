@@ -1,0 +1,26 @@
+Host pro
+	Hostname proton
+	User cag
+	ForwardAgent yes
+	ForwardX11 no
+	Port 22
+	ProxyCommand ssh cag@nx.adfitech.com nc %h %p
+
+Host neut
+	Hostname neutron
+	User cag
+	ForwardAgent yes
+	ForwardX11 no
+	Port 22
+	ProxyCommand ssh cag@nx.adfitech.com nc %h %p
+
+Host events
+	Hostname events.internal
+	User cag
+	ForwardAgent yes
+	ForwardX11 no
+	Port 22
+	ProxyCommand ssh cag@nx.adfitech.com nc %h %p
+
+Host www-beta.adfitech.com
+  ProxyCommand ssh cag@nx.adfitech.com nc %h %p

@@ -1,0 +1,11 @@
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=coverage
+--ignore-dir=.bundle
+--ignore-dir=.provisioners
+--ignore-dir=.puppet
+--ignore-dir=.sass-cache
+--ignore-dir=node_modules
+--ignore-dir=client/build
+--ignore-dir=public/assets
+--ignore-dir=client/src/js/infrastructure
