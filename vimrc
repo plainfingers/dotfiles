@@ -100,7 +100,8 @@ else
   "colorscheme desert
   "colorscheme macvim
   "colorscheme ir_black
-  colorscheme tir_black   "this is THE colorscheme i use
+  "colorscheme tir_black
+  colorscheme plainfingers_black   "this is THE colorscheme i use
   "colorscheme getafe
   "colorscheme native
   "colorscheme demoncag
