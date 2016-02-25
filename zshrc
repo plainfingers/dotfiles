@@ -47,13 +47,10 @@ alias zj='cd ~/plainfingers/zenproj'
 #bindkey '^[[A' history-substring-search-up
 #bindkey '^[[B' history-substring-search-down
 
-#export AZURE_STORAGE_ACCOUNT="dwproemion"
-#export AZURE_STORAGE_ACCESS_KEY="bGp0SXI82LEiHz+koG5ZiAt7U4GeplsQU/sxXzhFSsbGYiNrB9Gh8lzc0EjxC2t5sZv6pFQie8XaD7drGJT+tw=="
-export AZURE_STORAGE_ACCOUNT="dworangeintel"
-export AZURE_STORAGE_ACCESS_KEY="xQG05+/2LxMNSwAw3eY5zQAoHOIiNAFLcIjXGrcblDC1npotUInx7fVsYzJ+Rzu6vwazF7EPqO+yIAl47JoISg=="
-export GOOGLE_MAPS_API_KEY="AIzaSyDWb_3EQsvHi5rdlxuhbLsLEEcumw6Hb-Q"
+#export AZURE_STORAGE_ACCOUNT="dworangeintel"
 
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
+#export PATH=$HOME/.rbenv/bin:$PATH
+#eval "$(rbenv init -)"
 #echo 'eval "$(rbenv init -)"'
+#[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
