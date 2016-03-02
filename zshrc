@@ -30,8 +30,9 @@ alias v='vagrant'
 alias nx='ssh cag@nx.adfitech.com'
 alias at='adf-tunnel'
 alias wf='cd ~/plainfingers/devl/wf'
-alias orange='cd ~/plainfingers/devl/p2/orange_intel'
+alias orange='cd ~/plainfingers/devl/orange_intel'
 alias zj='cd ~/plainfingers/zenproj'
+alias ta='tree -a'
 
 #-----------------------------------------------------------------------------
 # binding
