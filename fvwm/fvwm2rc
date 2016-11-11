@@ -1,0 +1,121 @@
+EdgeResistance 1000 0
+#EdgeResistance 10000 10000
+
+# EwmhBaseStruts sets up the 'usable' screen area
+EwmhBaseStruts 0 80 0 45
+#EwmhBaseStruts 62 162 0 48
+
+ImagePath +:/usr/share/icons/fvwm
+
+read $[HOME]/.fvwm/Menus
+read $[HOME]/.fvwm/ConfigFvwmPager
+read $[HOME]/.fvwm/ConfigMouse
+read $[HOME]/.fvwm/ConfigKeys
+#read $[HOME]/.fvwm/ConfigFvwmButtons
+#read $[HOME]/.fvwm/ConfigFvwmTaskBar
+
+#*FvwmTaskBarStartMenu Main
+
+AddToFunc InitFunction
++ I Exec numlockx
+#+ I Exec xdaliclock -builtin0 -transparent -fg grey75 -geometry 250x52+2350+975
+#+ I Exec xscreensaver -nosplash
+
+##########################
+# Styles
+##########################
+Style * MouseFocusClickRaises, GrabFocus
+#Style * ManualPlacement
+Style "xdaliclock" NoTitle, StaysOnTop, NoHandles, Sticky
+Style "xclock" NoTitle, Sticky, WindowListSkip
+Style * DecorateTransient
+Style * DontStackTransientParent
+Style Fvwm* NoTitle,  Sticky, WindowListSkip, BorderWidth 0, HandleWidth 0, StaysOnTop, StaysPut
+#Style "FvwmPager"   StaysOnTop, NoHandles
+Style "FvwmPager"   NoHandles
+Style * IconBox 0 0 2560 -1, IconSize 40 32, IconFill top right
+
+##########################
+# colors
+##########################
+#MenuStyle darkblue grey60 blue -adobe-times-bold-r-*-*-14-*-*-*-*-*-*-* fvwm
+
+
+*FvwmEvent: PassID
+*FvwmEvent: add_window GrowDownFunc
+
+
+AddToFunc StartFunction
++ I FvwmEvent
+
+AddToFunc GrowDownFunc
++ I windowid $0 (PlacedByButton3) Resize bottomright keep -0p
+
+######
+## Set Environment variables
+############
+#SetEnv fvwm_img $[FVWM_USERDIR]/images
+#SetEnv fvwm_icon $[FVWM_USERDIR]/icons
+#SetEnv fvwm_scrpt $./scripts
+#SetEnv fvwm_wallpapers $[FVWM_USERDIR]/wallpaper
+#SetEnv fvwm_webbrowser /usr/bin/firefox
+#SetEnv fvwm_term /usr/bin/aterm
+#SetEnv fvwm_mail /usr/bin/mutt
+#SetEnv fvwm_media_player /usr/bin/xmms
+#SetEnv fvwm_video_player /usr/bin/mplayer
+
+######
+## Set the image path
+############
+#ImagePath $[fvwm_icon]:$[fvwm_icon];.png:$[fvwm_wallpapers]:+
+
+######
+## Virtual Desktops
+############
+#DesktopSize 3x3
+#DesktopName 0 Main
+#DesktopName 1 Work
+#DesktopName 2 Games
+#EdgeScroll 100 100
+#EdgeResistance 150  150
+#EdgeThickness 1
+
+######
+## Mouse and Focus Behavior
+############
+#ClickTime 350
+#MoveThreshold 3
+#Style * SloppyFocus, MouseFocusClickRaises
+
+
+#IgnoreModifiers L25
+
+######
+## Global Styles and options
+############
+#Style * TileCascadePlacement, GrabFocusOff
+#Style * NoPPosition, ResizeOpaque
+#OpaqueMoveSize -1
+#Emulate MWM
+#HideGeometryWindow Never
+#SnapAttraction 5 SameType Screen
+#SnapGrid 3 3
+#XorValue 55555
+#Style * DecorateTransient, DontRaiseTransient
+#Style * DontLowerTransient, StackTransientParent
+#Style * GrabFocusTransientOff
+#Style * WindowShadeSteps 20, WindowShadeScrolls
+#SetAnimation  10  -.01 0 .01 .03 .08 .18 .3 .45 .6 .75 .85 .90 .94 .97 .99 1.0
+#Style * MwmDecor, SlipperyIcon
+#Style * IconBox screen w 15 15 -165 -15, IconGrid 3 3, IconFill right top
+
+######
+## Program Styles
+############
+#Style "*" Icon 48x48/unknown.xpm
+#Style "XTerm" Icon 48x48/xterm.png, NoActiveIconOverride, MiniIcon mini/xterm.png
+#Style "gvim" Icon 48x48/gvim.png, IconOverride, MiniIcon mini/gvim.png, EWMHMiniIconOverride
+#Style "Firefox-bin" Icon 48x48/firefox.png, MiniIcon mini/firefox.png, EWMHMiniIconOverride
+#Style "irssi" Icon 48x48/gaim.png, MiniIcon mini/irc.png
+#Style "xmms" WindowListSkip, CirculateSkip
+#Style "MPlayer" Icon 48x48/mplayer.png

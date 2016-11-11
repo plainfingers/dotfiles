@@ -1,0 +1,1 @@
+*FvwmButtons(2x2, Icon clock.xpm, Swallow(UseOld) "xdaliclock" 'Exec xdaliclock -builtin0 -transparent -fg grey75 -padding 0 -geometry 250x52+75-0' &)

@@ -18,21 +18,41 @@ fi
 alias cp='cp -v'
 alias rm='rm -v'
 alias scp='scp -v'
+alias lrt='ls -lart'
+alias lsc='ls | wc -l'
+alias v='vagrant'
+alias nx='ssh cag@nx.adfitech.com'
+alias at='adf-tunnel'
+alias ta='tree -a'
+
+alias ...='cd ../..'
 alias pf='cd ~/plainfingers'
 alias devl='cd ~/devl'
 alias notes='cd ~/Dropbox/plainfingers/notes'
 alias music='cd ~/Music/plainfingers'
-alias pilgrim='cd ~/Music/plainfingers/pilgrim'
-alias mybin='cd ~/bin'
-alias lrt='ls -lart'
-alias lsc='ls | wc -l'
-alias ...='cd ../..'
-alias v='vagrant'
-alias nx='ssh cag@nx.adfitech.com'
-alias at='adf-tunnel'
+alias lv='cd ~/devl/loanvault'
+alias leg='cd ~/devl/legacy'
 alias wf='cd ~/devl/wf'
-alias orange='cd ~/devl/orange_intel'
-alias ta='tree -a'
+alias koel='cd ~/devl/koel'
+
+#taskwarrior related
+alias t='task'
+
+function tadd() {
+  task add project:$@
+}
+
+function tt() {
+  task project:$@
+}
+
+#function tl() {
+  #if [ -z "$1" ]; then
+    #task list
+  #else
+    #task list project:$1
+  #fi
+#}
 
 #-----------------------------------------------------------------------------
 # binding

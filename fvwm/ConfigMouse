@@ -1,0 +1,27 @@
+Mouse 0         1       A Stick
+Mouse 0         6       A Iconify
+Mouse 0         4       A Maximize
+Mouse 0         2       A Close
+
+Mouse 1         R       A Menu Main
+Mouse 2         R       A Menu Games
+Mouse 3         R       A WindowList
+
+Mouse 1         I       A DeIconify
+Mouse 0     4   A       Maximize 100 100
+Mouse 0     6   A       Iconify
+Mouse 1     TS      A   Function "Move-or-Shade"
+Mouse 3     TSIF    A   RaiseLower
+
+DestroyFunc DeIconify
+AddToFunc DeIconify
++ I       Iconify Off
++ I       ThisWindow (Sticky) PlaceAgain
++ I       ThisWindow (State 2) PlaceAgain
++ I       Raise
++ I       PointerWindow OnEnter
+
+AddToFunc "Move-or-Shade" "M" Move
++                         "M" Raise
++                         "C" Raise
++                         "D" WindowShade

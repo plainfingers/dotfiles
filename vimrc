@@ -370,6 +370,7 @@ noremap <C-N><C-N> :NERDTreeToggle<CR>
 noremap <C-N><C-F> :NERDTreeFind<CR>
 noremap <C-N><C-M> :NERDTreeClose<CR>
 let NERDTreeShowHidden = 1
+let NERDTreeQuitOnOpen = 1
 "noremap <leader>nm :NERDTreeMirror<CR>
 
 " conque term

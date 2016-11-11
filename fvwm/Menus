@@ -1,0 +1,108 @@
+MenuStyle * Hilight3DThickness 2
+MenuStyle * BorderWidth 3
+
+#################################################
+# main
+#################################################
+AddToMenu         "main" "main" Title
++ "xterms"      Popup Terminals
++ "devl stuff%adfmini.xpm%"		Popup DevlStuff
++ "adfitech qc %adfmini.xpm%"		Popup AdfitechQC
++ "adfitech shipping%adfmini.xpm%"	Popup AdfitechShipping
++ "adfitech misc%adfmini.xpm%"		Popup AdfitechMisc
++ "office programs%adfmini.xpm%"	Popup OfficePrograms
++ "browsers%adfmini.xpm%"		Popup browsers
++ ""               Nop
++ "lock"           Exec  xscreensaver-command -lock
++ "restart"        Restart
++ "quit"           Quit
+
+#################################################
+# xterms
+#################################################
+AddToMenu         "Terminals" "Terminals" Title
++ "local%mini-term.xpm%"	Exec xterm &
++ "arturo%mini-term.xpm%"	Exec xterm -e "ssh cag@arturo" &
++ "batman%mini-term.xpm%"	Exec xterm -e "ssh cag@batman" &
++ "bb%mini-term.xpm%"		Exec xterm -e "ssh cag@bb" &
++ "billie%mini-term.xpm%"	Exec xterm -e "ssh cag@billie" &
++ "bird%mini-term.xpm%"		Exec xterm -e "ssh cag@bird" &
++ "calculon%mini-term.xpm%"	Exec xterm -e "ssh cag@calculon" &
++ "chuck%mini-term.xpm%"	Exec xterm -e "ssh cag@chuck" &
++ "coltrane%mini-term.xpm%"	Exec xterm -e "ssh cag@coltrane" &
++ "count%mini-term.xpm%"	Exec xterm -e "ssh cag@count" &
++ "doc%mini-term.xpm%"	        Exec xterm -e "ssh cag@doc" &
++ "ella%mini-term.xpm%"		Exec xterm -e "ssh cag@ella" &
++ "hal%mini-term.xpm%"		Exec xterm -e "ssh cag@hal" &
++ "janis%mini-term.xpm%"	Exec xterm -e "ssh cag@janis" &
++ "miles%mini-term.xpm%"	Exec xterm -e "ssh cag@miles" &
++ "mingus%mini-term.xpm%"	Exec xterm -e "ssh cag@mingus" &
++ "monk%mini-term.xpm%"		Exec xterm -e "ssh cag@monk" &
++ "spiderman%mini-term.xpm%"	Exec xterm -e "ssh cag@spiderman" &
++ "wolf%mini-term.xpm%"	        Exec xterm -e "ssh cag@wolf" &
++ "wynton%mini-term.xpm%"	Exec xterm -e "ssh cag@wynton" &
+
+#################################################
+# office programs
+#################################################
+AddToMenu "OfficePrograms" "office programs" Title
++ "acrobat%pdf.xpm%"			Exec acroread &
++ "ghostview%mini-gv.xpm%"		Exec ghostview &
++ "gnumeric%desktop_settings.xpm%"	Exec gnumeric &
++ "open office%kmenuedit.xpm%"		Exec /usr_config/xses_bin/do_openoffice &
+
+#################################################
+# devl stuff
+#################################################
+AddToMenu "DevlStuff" "devl stuff" Title
++ "anjuta%library.xpm%"			Exec anjuta &
++ "rapidsvn%library.xpm%"			Exec rapidsvn &
++ "editctreebeta%library.xpm%"			Exec editctreebeta &
++ "wx designer%mini-olwm.xpm%"		Exec wxDesigner &
++ "gedit%library.xpm%"			Exec gedit &
++ "clsmed%c_src.xpm%"			Exec clsmed /home/cag/keep.c &
++ "libcat%5floppy_mount.xpm%"		Exec /home/cag/do_lc &
+
+
+#################################################
+# QC
+#################################################
+AddToMenu "AdfitechQC" "qc stuff" Title
++ "qccm%mini-fractal.xpm%"		Exec /usr_config/xses_bin/do_qccm &
++ "qcfic%mini-fractal.xpm%"		Exec /usr_config/xses_bin/do_qcfic &
++ "qcpg%mini-question.xpm%"		Exec /usr_config/xses_bin/do_reports &
++ "qccpm%kdmconfig.xpm%"		Exec /usr_config/xses_bin/do_qccpm &
++ "vmm%mini-mail.xpm%"			Exec /usr_config/xses_bin/do_vmm &
++ ""					Nop
++ "bm%mini-filemgr.xpm%"		Exec /usr_config/xses_bin/do_bm &
++ "qccp%bell.xpm%"			Exec /usr_config/xses_bin/do_qccp &
++ "qcsel%kcmkwm.xpm%"			Exec /usr_config/xses_bin/do_qcsel &
++ ""					Nop
+
+#################################################
+# Ship/Ins
+#################################################
+AddToMenu "AdfitechShipping" "shipping stuff" Title
++ "iscm%mini-fractal.xpm%"		Exec /usr_config/xses_bin/do_iscm &
++ "ispg%mini-question.xpm%"		Exec /usr_config/xses_bin/do_ispg &
++ "iscpm%kdmconfig.xpm%"		Exec /usr_config/xses_bin/do_iscpm &
+
+#################################################
+# adfitech misc
+#################################################
+AddToMenu "AdfitechMisc" "misc stuff" Title
++ "darth%kfm_fulltrash.xpm%"        Exec  /usr_config/xses_bin/do_rdp.darth
++ "printstation scheduler%folder_red.xpm%"  Exec /usr_config/xses_bin/do_schedule_printstation &
++ "autoreply%folder_red.xpm%"		Exec /usr_config/xses_bin/do_autoreply &
++ "substitutions%kfm_fulltrash.xpm%"	Exec /usr_config/xses_bin/do_wxsubs &
++ "print screen"   Exec  /usr_config/xses_bin/lowres_print_screen
++ "edit news%editors_package.xpm%"	Exec /usr_config/xses_bin/do_editnews &
++ "print screen%locale.xpm%"		Exec /usr_config/xses_bin/lowres_print_screen &
+
+#################################################
+# web browsers
+#################################################
+AddToMenu "browsers" "browsers" Title
++ "firefox%www.xpm%"			Exec /usr_config/xses_bin/do_firefox &
++ "mozillaa%www.xpm%"		Exec /usr_config/xses_bin/do_mozilla &
++ "netscape 7%mini-nscape.xpm%"		Exec /usr_config/xses_bin/do_netscape7 &

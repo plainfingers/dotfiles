@@ -1,0 +1,19 @@
+AddToFunc StartFunction
++ I Module FvwmTaskBar
+
+*FvwmTaskBar: Geometry +0-0
+*FvwmTaskBar: Rows 1
+*FvwmTaskBar: DeskOnly
+*FvwmTaskBar: UseSkipList
+*FvwmTaskBar: UseIconNames
+*FvwmTaskBar: StartName $[HOSTNAME]
+*FvwmTaskBar: StartMenu Main
+#*FvwmTaskBar: NoDefaultStartButton
+*FvwmTaskBar: MailBox None
+#*FvwmTaskBar: Button Title xTerm, Icon mini/xterm.png, Action (Mouse 1) Exec xterm
+#*FvwmTaskBar: ClockFormat: "%a %R"
+*FvwmTaskBar: DateFormat: "%A %B %d %Y"
+# For some reason the above doesn't work
+#*FvwmTaskBar: Action Click3 Menu FvwmWindowOpsMenu
+#*FvwmTaskBar: AutoHide 5
+

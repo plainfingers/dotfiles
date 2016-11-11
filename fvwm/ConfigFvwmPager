@@ -1,0 +1,18 @@
+AddToFunc StartFunction
++ I Module FvwmPager 0
+
+*FvwmPager: MiniIcons
+*FvwmPagerFont -*-r-*-*-12-*-*-*-*-*-*-*
+*FvwmPagerHilight #c0c0c0
+*FvwmPagerLabel 0 workspace
+*FvwmPagerSmallFont 5x8
+#*FvwmButtons(8x2, Swallow(UseOld) "Desktop" 'FvwmPager 0 0')
+
+
+*FvwmPager: Geometry 150x52+1290-0
+#*FvwmPager: Columns 1
+
+#*FvwmPager: Label 0 Work
+#*FvwmPager: Label 1 BackGround
+
+DeskTopSize 6x1
