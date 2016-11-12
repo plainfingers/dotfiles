@@ -145,7 +145,7 @@ set timeoutlen=300
 
 " Catch trailing whitespace
 "set listchars=tab:>-,trail:·,eol:$
-set listchars=tab:▸\ ,eol:¬ " characters used to show hidden characters"
+"set listchars=tab:▸\ ,eol:¬ " characters used to show hidden characters"
 nmap <silent> <leader>sl :set nolist!<CR>
 
 " Fix command typos (stolen from Adam Katz)
@@ -259,8 +259,8 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 "set statusline+=%{rvmprompt#statusline()}
 
 " syntastic
-set statusline+=%{SyntasticStatuslineFlag()}
-let g:syntastic_c_include_dirs = [ '/opt/ctreeACE/osx.v10.6.64bit/include', 'include', '/Users/chad/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1' ]
+"set statusline+=%{SyntasticStatuslineFlag()}
+"let g:syntastic_c_include_dirs = [ '/opt/ctreeACE/osx.v10.6.64bit/include', 'include', '/Users/chad/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1' ]
 
 set expandtab    " expand tabs to spaces
 set nowrap       " no wrap by default

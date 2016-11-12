@@ -6,12 +6,12 @@ MenuStyle * BorderWidth 3
 #################################################
 AddToMenu         "main" "main" Title
 + "xterms"      Popup Terminals
-+ "devl stuff%adfmini.xpm%"		Popup DevlStuff
-+ "adfitech qc %adfmini.xpm%"		Popup AdfitechQC
-+ "adfitech shipping%adfmini.xpm%"	Popup AdfitechShipping
-+ "adfitech misc%adfmini.xpm%"		Popup AdfitechMisc
-+ "office programs%adfmini.xpm%"	Popup OfficePrograms
-+ "browsers%adfmini.xpm%"		Popup browsers
++ "devl stuff"		Popup DevlStuff
+#+ "adfitech qc %adfmini.xpm%"		Popup AdfitechQC
+#+ "adfitech shipping%adfmini.xpm%"	Popup AdfitechShipping
+#+ "adfitech misc%adfmini.xpm%"		Popup AdfitechMisc
+#+ "office programs%adfmini.xpm%"	Popup OfficePrograms
++ "browsers"		Popup browsers
 + ""               Nop
 + "lock"           Exec  xscreensaver-command -lock
 + "restart"        Restart
@@ -22,25 +22,6 @@ AddToMenu         "main" "main" Title
 #################################################
 AddToMenu         "Terminals" "Terminals" Title
 + "local%mini-term.xpm%"	Exec xterm &
-+ "arturo%mini-term.xpm%"	Exec xterm -e "ssh cag@arturo" &
-+ "batman%mini-term.xpm%"	Exec xterm -e "ssh cag@batman" &
-+ "bb%mini-term.xpm%"		Exec xterm -e "ssh cag@bb" &
-+ "billie%mini-term.xpm%"	Exec xterm -e "ssh cag@billie" &
-+ "bird%mini-term.xpm%"		Exec xterm -e "ssh cag@bird" &
-+ "calculon%mini-term.xpm%"	Exec xterm -e "ssh cag@calculon" &
-+ "chuck%mini-term.xpm%"	Exec xterm -e "ssh cag@chuck" &
-+ "coltrane%mini-term.xpm%"	Exec xterm -e "ssh cag@coltrane" &
-+ "count%mini-term.xpm%"	Exec xterm -e "ssh cag@count" &
-+ "doc%mini-term.xpm%"	        Exec xterm -e "ssh cag@doc" &
-+ "ella%mini-term.xpm%"		Exec xterm -e "ssh cag@ella" &
-+ "hal%mini-term.xpm%"		Exec xterm -e "ssh cag@hal" &
-+ "janis%mini-term.xpm%"	Exec xterm -e "ssh cag@janis" &
-+ "miles%mini-term.xpm%"	Exec xterm -e "ssh cag@miles" &
-+ "mingus%mini-term.xpm%"	Exec xterm -e "ssh cag@mingus" &
-+ "monk%mini-term.xpm%"		Exec xterm -e "ssh cag@monk" &
-+ "spiderman%mini-term.xpm%"	Exec xterm -e "ssh cag@spiderman" &
-+ "wolf%mini-term.xpm%"	        Exec xterm -e "ssh cag@wolf" &
-+ "wynton%mini-term.xpm%"	Exec xterm -e "ssh cag@wynton" &
 
 #################################################
 # office programs

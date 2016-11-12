@@ -1,97 +1,66 @@
 key F12  A  M  Restart
+
+#---------------------------------------
+# prev/next desktop
+#---------------------------------------
 Key Left	A	C	Scroll -100 0
-Key 1	        A	M	Scroll -100 0
+Key 1	    A	M	Scroll -100 0
 Key Right	A	C	Scroll +100 +0
-Key 2           A	M	Scroll +100 +0
-Key Up		A	C	Scroll +0   -100
-Key Down	A	C	Scroll +0   +100
+Key 2       A	M	Scroll +100 +0
 
-#Key Left	A	M	Scroll -10 +0
-#Key Right	A	M	Scroll +10 +0
-#Key Up		A	M	Scroll +0   -10
-#Key Down	A	M	Scroll +0   +10
-
+#---------------------------------------
+# mouse movements
+#---------------------------------------
 Key Left	A	SC	CursorMove -1 0
 Key Right	A	SC	CursorMove +1 +0
 Key Up		A	SC	CursorMove +0   -1
 Key Down	A	SC	CursorMove +0   +1
-
 Key Left	A	SM	CursorMove -10 +0
 Key Right	A	SM	CursorMove +10 +0
 Key Up		A	SM	CursorMove +0   -10
 Key Down	A	SM	CursorMove +0   +10
 
-Key Up      A   M   Raise
-Key Down    A   M   Lower
 
 #---------------------------------------
 # key bindings to open programs
 #---------------------------------------
-Key F       A   M   Exec /usr_config/xses_bin/do_firefox &
-Key G       A   M  Exec editctreebeta &
-Key I       A   M   Exec /usr_config/xses_bin/do_imagemaint &
-Key T       A   M   Exec xterm
-
-#Key B       A   M   Exec /home/cag/do_bat_gterm &
-#Key B       A   M   Exec /home/cag/xb batman &
-#Key B       A   SM   Exec /home/cag/xbs &
-#Key C       A   M   Exec /prod/opmenu/xt coltrane &
-#Key C       A   M  Exec /usr_config/xses_bin/do_qccpm &
-#Key C       A   SM  Exec /usr_config/xses_bin/do_iscpm &
-#Key E       A   M   Exec /home/cag/xt ella &
-#Key F       A   M   Exec fbrun &
-#Key G       A   M   Exec /prod/opmenu/do_mingus_xterm &
-#Key H       A   M   Exec /prod/opmenu/do_hal_xterm &
-#Key H       A   SM  Exec /usr_config/xses_bin/do_schedule_printstation &
-#Key I       A   M   Exec /usr_config/xses_bin/do_imagemaint &
-#Key I       A   M  Exec /usr_config/xses_bin/do_iscm &
-#Key J       A   M   Exec /home/cag/do_janis_gterm &
-#Key K       A   M   Exec /prod/opmenu/do_bb_xterm &
-#Key M       A   SM   Exec /usr_config/xses_bin/do_imagemaint &
-#Key O       A   M   Exec /home/cag/xt monk &
-#Key O       A   M  Exec /usr_config/xses_bin/do_openoffice &
-#Key P       A   M   Exec /usr_config/xses_bin/do_reports &
-#Key P       A   SM  Exec /usr_config/xses_bin/do_ins_reports &
-#Key Q       A   M   Exec /usr_config/xses_bin/do_qccm &
-#Key Q       A   SM  Exec /usr_config/xses_bin/do_iscm &
-#Key U       A   M   Exec /usr_config/xses_bin/do_wxsubs &
-#Key R       A   M   Exec /home/cag/xt bird &
-#Key R       A   M  Exec rapidsvn &
-#Key S       A   M   Exec /home/cag/do_spiderman_gterm &
-#Key S       A   SM  Exec /usr_config/xses_bin/do_iscpm &
-#Key T       A   M   Exec /usr_config/xses_bin/do_thunderbird &
-#Key V       A   M   Exec /usr_config/xses_bin/do_vmm &
-#Key V       A   SM   Exec /home/cag/xbsmall &
+Key F       A   M   Exec firefox &
+Key T       A   M   Exec xterm &
 
 
 #---------------------------------------
-# key bindings to cycle windows
+# App management
 #---------------------------------------
-Key Tab         A       M       Prev Focus
-Key Tab         A       MS      Next Focus
-#Key P           A       M       Prev Focus
+
+# list running apps
+Key Tab     A   M   WindowList
+Key L       A   M   WindowList
+#Key L       A   SM  WindowList
+
+# cycle windows
 Key K           A       M       Next Focus
 Key J           A       M       Prev Focus
 
-#---------------------------------------
-# key bindings to open menus
-#---------------------------------------
-Key L       A   M   WindowList
-key O       A   M   Popup main 
-key Return       A   M   Popup main 
+# bring to front/hide
+Key Up      A   M   Raise
+Key Down    A   M   Lower
+
+# open menus
+key O       A   M   Popup main
+key Return  A   M   Popup main
 
 #---------------------------------------
 # window moving
 #---------------------------------------
 Key C   A   M   Move -0 -0
-Key E   A   M   Move w w-10p 
-Key X   A   M   Move w w+10p 
+Key E   A   M   Move w w-10p
+Key X   A   M   Move w w+10p
 Key S   A   M   Move w-10p w
 Key D   A   M   Move w+10p w
 Key R   A   M   Move w+50 w
 Key W   A   M   Move w-50 w
 
-Key M       A   M   Maximize 50 96
+Key M       A   M   Maximize 100 100
 Key M       A   SM   Maximize 50 96
 Key N       A   M   Lower
 Key U       A   M  Raise
@@ -100,7 +69,7 @@ Key I       A   SM  Iconify
 #---------------------------------------
 # window resizing
 #---------------------------------------
-Key E   A   SM   Resize w w-10p 
-Key X   A   SM   Resize w w+10p 
+Key E   A   SM   Resize w w-10p
+Key X   A   SM   Resize w w+10p
 Key S   A   SM   Resize w-10p w
 Key D   A   SM   Resize w+10p w
