@@ -6,14 +6,8 @@ xfterm4*boldfont:-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-15
 !------------------------------------
 Xterm*saveLines:32767
 XTerm*charClass: 33:48,36-38:48,43-47:48,58:48,61:48,63-64:48,126:48
-!XTerm*faceName: Dejavu Sans Mono:size=11
 xterm*faceName: Bitstream Vera Sans Mono::size=10
 XTerm*boldFont: Dejavu Sans Mono:style=Bold:size=10
-!XTerm*font:-misc-fixed-medium-r-normal-*-*-120-*-*-c-*-iso8859-2
-!XTerm*font:-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-15
-!xterm*Font: -adobe-courier-bold-r-normal--12-*
-!xterm*faceName: Bitstream Vera Sans Mono:style=Bold 
-!XTerm*boldFont:-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-15
 xterm*cursorColor: yellow
 XTerm*colorMode: true
 XTerm*pointerColor: blue
@@ -32,15 +26,19 @@ xterm*foreground:White
 !black
 xterm*color0:#333333
 xterm*color8:#686868
+
 !red
 xterm*color1:#CA5E5E
 xterm*color9:#FF595D
+
 !green
 xterm*color2:#ABCB8D
 xterm*color10:#AFD78A
+
 !yellow
 xterm*color3:#C48D62
 xterm*color11:#E0A765
+
 !blue
 !xterm*color4:#8CA0B0
 !xterm*color12:#3D6A82
@@ -50,15 +48,18 @@ xterm*color11:#E0A765
 !XTerm*color12: #99caf5
 xterm*color4:LightSlateBlue
 xterm*color12:LightSlateBlue
+
 !magenta
 xterm*color5:#CC98E0
 xterm*color13:#E1A2DC
+
 !cyan
 xterm*color6:#44CACF
 xterm*color14:#6CBFC4
+
 !white
 xterm*color7:#E7E6DD
-xterm*color15:#F0EFE7 
+xterm*color15:#F0EFE7
 
 
 !------------------------------------
@@ -190,7 +191,7 @@ aterm*font: -b&h-lucidatypewriter-medium-r-normal-sans-17-120-100-100-m-100-iso8
 !Aterm*font: -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1
 !
 !aterm*boldFont: -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1
-!Aterm*geometry: 120x40 
+!Aterm*geometry: 120x40
 !Aterm*transpscrollbar:true
 
 !--best all around misc-fixed
@@ -218,10 +219,10 @@ aterm*color13:#E1A2DC
 aterm*color6:#44CACF
 aterm*color14:#6CBFC4
 aterm*color7:#E7E6DD
-aterm*color15:#F0EFE7 
+aterm*color15:#F0EFE7
 
 !------------------------------------------
-! aterm colors midnight blue bg  
+! aterm colors midnight blue bg
 !------------------------------------------
 !aterm*foreground: white
 !aterm*background: #1d2b3a
@@ -289,7 +290,7 @@ aterm*color15:#F0EFE7
 
 
 !------------------------------------------
-! aterm black bg 
+! aterm black bg
 !------------------------------------------
 !aterm*background:Black
 !aterm*foreground:White
@@ -312,7 +313,7 @@ aterm*color15:#F0EFE7
 
 
 
- 
+
 !-------------------------------------------------------
 ! aterm very nice - use vim colo: understated
 !-------------------------------------------------------
@@ -331,7 +332,7 @@ aterm*color15:#F0EFE7
 !aterm*color6:#44CACF
 !aterm*color14:#6CBFC4
 !aterm*color7:#E7E6DD
-!aterm*color15:#F0EFE7 
+!aterm*color15:#F0EFE7
 
 !------------------------------------
 ! global urxvt settings
@@ -379,10 +380,10 @@ urxvt*color13:#E1A2DC
 urxvt*color6:#44CACF
 urxvt*color14:#6CBFC4
 urxvt*color7:#E7E6DD
-urxvt*color15:#F0EFE7 
+urxvt*color15:#F0EFE7
 
 !------------------------------------------
-! urxvt colors midnight blue bg  
+! urxvt colors midnight blue bg
 !------------------------------------------
 !urxvt*foreground: white
 !urxvt*background: #1d2b3a
