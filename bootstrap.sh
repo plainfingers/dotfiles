@@ -25,9 +25,11 @@ cd ~
 
 #----------------------------------------------------------------------------
 # desktop/x
-# fvwm, xorg, firefox, tmux, fonts, optional video drivers
 #----------------------------------------------------------------------------
-sudo pacman -S fvwm xorg-server xorg-server-utils xorg-xinit xterm firefox tmux
+sudo pacman -S xorg-server xorg-server-utils xorg-xinit
+sudo pacman -S xterm tmux rxvt-unicode urxvt-perls
+sudo pacman -S fvwm i3-wm dmenu
+sudo pacman -S firefox
 sudo pacman -S ttf-bitstream-vera ttf-anonymous-pro ttf-hack
 #sudo pacman -S xf86-video-nouveau xf86-video-vesa xf86-video-fbdev
 
@@ -43,3 +45,4 @@ ln -s ~/dotfiles/fvwm .fvwm
 ln -s ~/dotfiles/fvwm/fvwm2rc .fvwm2rc
 ln -s ~/dotfiles/vimperatorrc .vimperatorrc
 ln -s ~/dotfiles/tmux.conf .tmux.conf
+ln -s ~/dotfiles/i3 .i3
