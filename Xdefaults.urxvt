@@ -1,0 +1,86 @@
+!------------------------------------
+! global urxvt settings
+!------------------------------------
+!URxvt*font: xft:monospace:pixelsize=12
+!URxvt.letterSpace: -4
+URxvt*font: xft:hack:pixelsize=14
+!urxvt*termName:xterm-color
+urxvt*termName:rxvt
+urxvt*saveLines:32767
+urxvt*colorMode: true
+urxvt*scrollBar: false
+
+!------------------------------------
+! white urxvt settings
+!------------------------------------
+!urxvt*background:white
+!urxvt*foreground:black
+!urxvt*cursorColor:blue
+
+
+!------------------------------------
+! black urxvt settings
+!------------------------------------
+urxvt*cursorColor: yellow
+urxvt*background:Black
+urxvt*foreground:White
+
+!-------------------------------------------------------
+! urxvt very nice - use vim colo: understated
+!-------------------------------------------------------
+!black
+urxvt*color0:#333333
+urxvt*color8:#686868
+urxvt*color1:#CA5E5E
+urxvt*color9:#FF595D
+urxvt*color2:#ABCB8D
+urxvt*color10:#AFD78A
+urxvt*color3:#C48D62
+urxvt*color11:#E0A765
+urxvt*color4:LightSlateBlue
+urxvt*color12:LightSlateBlue
+urxvt*color5:#CC98E0
+urxvt*color13:#E1A2DC
+urxvt*color6:#44CACF
+urxvt*color14:#6CBFC4
+urxvt*color7:#E7E6DD
+urxvt*color15:#F0EFE7
+
+!------------------------------------------
+! perl extensions
+! NOTE: there should not be any spacing between extension names
+!------------------------------------------
+!uRxvt.perl-ext-common: extension_name_2,extension_name_2,...
+
+!
+!You can make URLs in the terminal clickable using the matcher extension. For example, to open links
+!in the default web browser with the left mouse button, add the following to .Xresources:
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+!matcher to open and list recent (currently limited to 10) URLs via keyboard:
+URxvt.keysym.C-Delete: perl:matcher:last
+URxvt.keysym.M-Delete: perl:matcher:list
+
+!Matching links can be colored with a chosen foreground or background color, for example blue:
+URxvt.matcher.rend.0: Uline Bold fg5
+
+!Alternatively, use colorUL for a #RRGGBB color. This will however color all underlined text,
+!instead of only link matches
+URxvt.colorUL: #4682B4
+
+!select and open URLs in your web browser without using the mouse
+!Alt+u  - Enter selection mode. The last URL on your screen will be selected.
+!         You can repeat Alt+u to select the next upward URL.
+!k      - Select next upward URL
+!j      - Select next downward URL
+!Return - Open selected URL in browser and quit selection mode
+!o      - Open selected URL in browser without quitting selection mode
+!y      - Copy (yank) selected URL and quit selection mode
+!Esc    - Cancel URL selection mode
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+

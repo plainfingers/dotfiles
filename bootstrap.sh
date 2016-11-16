@@ -46,3 +46,4 @@ ln -s ~/dotfiles/fvwm/fvwm2rc .fvwm2rc
 ln -s ~/dotfiles/vimperatorrc .vimperatorrc
 ln -s ~/dotfiles/tmux.conf .tmux.conf
 ln -s ~/dotfiles/i3 .i3
+ln -s ~/dotfiles/Xdefaults.urxvt .Xdefaults
