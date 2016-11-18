@@ -3,7 +3,7 @@
 # bootstrap script to install core tools
 #----------------------------------------------------------------------------
 cd ~
-sudo pacman -S zsh grml-zsh-config
+sudo pacman -S zsh grml-zsh-config linux-headers netctl
 
 #----------------------------------------------------------------------------
 # vim/pathogen and deps
@@ -28,7 +28,7 @@ cd ~
 #----------------------------------------------------------------------------
 sudo pacman -S xorg-server xorg-server-utils xorg-xinit
 sudo pacman -S xterm tmux rxvt-unicode urxvt-perls
-sudo pacman -S fvwm i3-wm dmenu
+sudo pacman -S fvwm i3-wm dmenu xgd-utils
 sudo pacman -S firefox
 sudo pacman -S ttf-bitstream-vera ttf-anonymous-pro ttf-hack
 #sudo pacman -S xf86-video-nouveau xf86-video-vesa xf86-video-fbdev

@@ -11,19 +11,13 @@ urxvt*colorMode: true
 urxvt*scrollBar: false
 
 !------------------------------------
-! white urxvt settings
-!------------------------------------
-!urxvt*background:white
-!urxvt*foreground:black
-!urxvt*cursorColor:blue
-
-
-!------------------------------------
 ! black urxvt settings
 !------------------------------------
 urxvt*cursorColor: yellow
 urxvt*background:Black
 urxvt*foreground:White
+urxvt*fadeColor:snow
+urxvt*fading:20
 
 !-------------------------------------------------------
 ! urxvt very nice - use vim colo: understated
