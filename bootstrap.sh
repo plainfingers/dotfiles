@@ -3,7 +3,7 @@
 # bootstrap script to install core tools
 #----------------------------------------------------------------------------
 cd ~
-sudo pacman -S zsh grml-zsh-config linux-headers netctl
+sudo pacman -S zsh grml-zsh-config linux-headers netctl openssh
 
 #----------------------------------------------------------------------------
 # vim/pathogen and deps
