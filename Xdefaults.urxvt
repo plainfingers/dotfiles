@@ -3,7 +3,7 @@
 !------------------------------------
 !URxvt*font: xft:monospace:pixelsize=12
 !URxvt.letterSpace: -4
-URxvt*font: xft:hack:pixelsize=14
+URxvt*font: xft:hack:pixelsize=22
 !urxvt*termName:xterm-color
 urxvt*termName:rxvt
 urxvt*saveLines:32767

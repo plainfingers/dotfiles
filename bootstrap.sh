@@ -3,7 +3,7 @@
 # bootstrap script to install core tools
 #----------------------------------------------------------------------------
 cd ~
-sudo pacman -S zsh grml-zsh-config linux-headers netctl openssh
+sudo pacman -S zsh grml-zsh-config linux-headers netctl dialog openssh
 
 #----------------------------------------------------------------------------
 # vim/pathogen and deps
@@ -11,7 +11,7 @@ sudo pacman -S zsh grml-zsh-config linux-headers netctl openssh
 sudo pacman -S vim git ack ctags
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-cd ~/.vim/bundle/autoload
+cd ~/.vim/bundle
 git clone https://github.com/mileszs/ack.vim.git ack.vim
 git clone https://github.com/plainfingers/black_is_the_color.git black_is_the_color
 git clone https://github.com/kien/ctrlp.vim ctrlp.vim
@@ -28,9 +28,9 @@ cd ~
 #----------------------------------------------------------------------------
 sudo pacman -S xorg-server xorg-server-utils xorg-xinit
 sudo pacman -S xterm tmux rxvt-unicode urxvt-perls
-sudo pacman -S fvwm i3-wm dmenu xgd-utils
-sudo pacman -S firefox
-sudo pacman -S ttf-bitstream-vera ttf-anonymous-pro ttf-hack
+sudo pacman -S fvwm i3-wm i3status i3lock dmenu xdg-utils
+sudo pacman -S firefox ubzl-browser
+sudo pacman -S ttf-bitstream-vera ttf-anonymous-pro ttf-hack ttf-truefont
 #sudo pacman -S xf86-video-nouveau xf86-video-vesa xf86-video-fbdev
 
 #----------------------------------------------------------------------------
@@ -47,3 +47,10 @@ ln -s ~/dotfiles/vimperatorrc .vimperatorrc
 ln -s ~/dotfiles/tmux.conf .tmux.conf
 ln -s ~/dotfiles/i3 .i3
 ln -s ~/dotfiles/Xdefaults.urxvt .Xdefaults
+
+
+
+# netctl
+# if already running
+# sudo ip link set ens9 down
+# sudo netctl start ehternet

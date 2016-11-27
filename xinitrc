@@ -3,4 +3,5 @@ if [ -s ~/.Xmodmap ]; then
 fi
 
 #exec fvwm
+xrandr --dpi 160
 exec i3
