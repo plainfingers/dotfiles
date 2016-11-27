@@ -1,0 +1,55 @@
+####################################################
+#---------------------COLORS-----------------------#
+####################################################
+
+color normal      black  default  # pager body
+color attachment  red  default  # ..
+#color indicator   yellow default
+#color indicator   brightblack default
+color indicator   black white
+color body        yellow   default "ftp://[^ ]*"
+color body        blue  default "[[:alnum:]][-+.#_[:alnum:]]*@[-+.[:alnum:]]*[[:alnum:]]"
+color body        yellow    default "(http|ftp|news|telnet|finger)://[^ >]*"
+color body        yellow    default "<URL:[^ ]*>"
+color error       red     default
+
+#headers:
+color header    brightblue default          "^to: "
+color header    blue default          "^cc: "
+color header    yellow default           "^date: "
+color header    red default            "User-Agent:"
+color header    yellow default    "^from: "
+color header    yellow default "^subject: "
+
+color hdrdefault  yellow default  #
+color  index        black       default   ~N
+#color  normal       brightyellow       default
+#color # status       brightyellow           red
+color  tilde        brightyellow         default
+color  tree         yellow            default
+#color indicator   default  blue   # index
+color markers     red    default # index
+color message     white  blue   # index
+
+#  Coloring quoted text
+color quoted      yellow          default# pager body
+color quoted1     red           default# pager body
+color quoted2     yellow          default# pager body
+color quoted3     yellow        default# pager body
+color quoted4     blue            default
+color quoted5     magenta         default
+color quoted6     red             default
+color quoted7     yellow          default
+color quoted8     yellow            default
+
+color signature   white    default # pager body
+color status      brightwhite  blue   # index status bar default: default default
+
+color tilde       blue   default
+#color tree        red    default# index
+color bold        blue  default # ..
+color underline   yellow default #
+color body        blue   red     "<[Gg]>"
+color body        blue   red     "<[Bb][Gg]>"
+color body        yellow default   "[;:]-[)/(|]"
+

@@ -32,6 +32,7 @@ sudo pacman -S xterm tmux rxvt-unicode urxvt-perls
 sudo pacman -S fvwm i3-wm i3status i3lock dmenu xdg-utils
 sudo pacman -S firefox
 sudo pacman -S ttf-bitstream-vera ttf-anonymous-pro ttf-hack
+sudo pacman -S pass   # cli password manager that is awesome
 
 #----------------------------------------------------------------------------
 # link dotfiles

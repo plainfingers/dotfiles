@@ -1,0 +1,53 @@
+####################################################
+#---------------------COLORS-----------------------#
+####################################################
+
+color normal      black  white  # pager body
+color attachment  red  white  # ..
+color indicator   yellow white
+color body        yellow   white "ftp://[^ ]*"
+color body        blue  white "[[:alnum:]][-+.#_[:alnum:]]*@[-+.[:alnum:]]*[[:alnum:]]"
+color body        yellow    white "(http|ftp|news|telnet|finger)://[^ >]*"
+color body        yellow    white "<URL:[^ ]*>"
+color error       red     white
+
+#headers:
+color header    brightblue white          "^to: "
+color header    brightblue white          "^cc: "
+color header    yellow white           "^date: "
+color header    red white            "User-Agent:"
+color header    yellow white    "^from: "
+color header    yellow white "^subject: "
+
+color hdrdefault  yellow white  #
+color  index        blue       white   ~N
+#color  normal       brightyellow       white
+#color # status       brightyellow           red
+color  tilde        brightyellow         white
+color  tree         yellow            white
+#color indicator   white  blue   # index
+color markers     red    white # index
+color message     white  blue   # index
+
+#  Coloring quoted text
+color quoted      yellow          white# pager body
+color quoted1     red           white# pager body
+color quoted2     yellow          white# pager body
+color quoted3     yellow        white# pager body
+color quoted4     blue            white
+color quoted5     magenta         white
+color quoted6     red             white
+color quoted7     yellow          white
+color quoted8     yellow            white
+
+color signature   blue    white # pager body
+color status      white  blue   # index status bar white: white white
+
+color tilde       blue   white
+#color tree        red    white# index
+color bold        blue  white # ..
+color underline   yellow white #
+color body        blue   red     "<[Gg]>"
+color body        blue   red     "<[Bb][Gg]>"
+color body        yellow white   "[;:]-[)/(|]"
+

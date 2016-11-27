@@ -1,0 +1,96 @@
+color normal     default        default      
+color indicator  brightyellow   red          
+color tree       brightmagenta  default      
+color status     brightwhite    black        
+color error      brightred      default      
+color message    brightgreen    default      
+color signature  red            default      
+color attachment brightyellow   default      
+color search     brightyellow   red          
+color tilde      brightmagenta  default      
+color markers    red            default      
+color hdrdefault blue           default      
+color bold       brightblack    default      
+color underline  brightwhite    default      
+color quoted     blue           default      
+color quoted1    red            default      
+color quoted2    magenta        default      
+color quoted3    green          default      
+color quoted4    blue           default      
+color quoted5    cyan           default      
+color quoted6    green          default      
+color quoted7    red            default      
+color quoted8    magenta        default      
+color quoted9    blue           default      
+color index      brightyellow   default  ~T  
+color index      red            default  ~D  
+color index      brightgreen    default  ~N  
+color index      brightred      default  ~F  
+color index      brightblue     default  ~P  
+color header     brightwhite    default  "cc:" 
+color header     brightred      default  "^(from|subject|newsgroups|to):"
+color header     red            default  "^(reply-to|date):"
+color header     brightgreen    default  "^(user-agent|x-mailer|x-newsreader):"
+color header     brightwhite    default  "^Followup-To:"
+color header     brightred      blue     "^X-Soest:"
+color body       brightblue     default  "[-a-z_0-9.+]+@[-a-z_0-9.]+"
+color body       brightblue     default  "<URL:.*>"
+color body       brightblue     default  "((ftp|http|https)://|(file|mailto|news):|www\\.)[-a-z0-9_.:]*[a-z0-9](/[^][{} \t\n\r\"<>()]*[^][{} \t\n\r\"<>().,:!])?/?"
+color body       blue           red      "[;:]-*[)oO>(<]" 
+color body       red            default  "Korrekte Unterschrift"
+color body       brightyellow   black    "(Öffentlicher Schlüssel nicht gefunden|keine vertrauenswürdige Signatur|Dieser Schlüssel ist verfallen)"
+color body       brightred      black    "FALSCHE Unterschrift"
+color body       brightgreen    black    "nicht durch hinreichend vertrauenswürdige Signaturen zertifiziert"
+color body       brightred      green    "(Start SpamAssassin results|End of SpamAssassin results)"
+color header     brightyellow   default  "X-Spam-Report:"
+color body       brightmagenta  black    "^\\[---.*"       
+color body       green          black    "^#v[-+]" 
+color body       brightblack    default  "\\*.*\\*"       
+color body       brightwhite    default  "[^a-z]_.*_[^a-z]"        
+color body       red            default  "[^/a-z]/[a-z]+/[^/a-z]" 
+color header     green          default      'Mozilla Thunderbird'
+color header     brightgreen    default      'Mutt/'
+color header     brightgreen    default      'slrn/'
+color header     brightyellow   default      'trn'
+color header     brightgreen    default      'tin/'
+color header     brightred      default      'Microsoft Outlook'
+color header     brightred      default      'Organization: http://groups.google.com'
+color header     brightred      default      'Xnews/'
+color header     green          default      'Mozilla/'
+color header     brightgreen    default      'Gnus/'
+color header     green          default      '40tude_Dialog'
+color header     green          default      'Pan/'
+color header     green          default      'Forte Agent'
+color header     green          default      'KNode/'
+color header     green          default      'ForteAgent/'
+color header     brightyellow   default      'MicroPlanet-Gravity/'
+color header     brightred      default      'Xnntp/'
+color header     brightred      default      'nc\ \\\('
+color header     brightred      default      'AOL Bertelsmann Online'
+color header     green          default      'Mozilla 4'
+color header     brightred      default      'MesNews/'
+color header     green          default      'MacSOUP/'
+color header     green          default      'KMail'
+color header     brightred      default      'Microsoft Office'
+color header     brightyellow   default      'QUALCOMM Windows Eudora'
+color header     brightred      default      'ColdFusion'
+color header     green          default      'Pegasus Mail'
+color header     brightyellow   default      'Opera M'
+color header     brightyellow   default      'Sylpheed-Claws'
+color header     brightred      default      'STRATO-Webmail'
+color header     green          default      'Evolution'
+color header     brightred      default      'WWW-Mail'
+color header     brightred      default      'Webmail'
+color header     green          default      'Ximian Evolution'
+
+color body       brightblue     default "^[^>].*(wrote|writes|said|says|schrieb|schreibt|schrub|\
+schreibselte|tippte|meinte|teilte folgendes mit|\
+escreveu|escribió|scripsit|[0-9]+\\]|\\.[a-z]{2,4}>).*:"
+
+color body       brightred       default "^>[^>].*(wrote|writes|said|says|schrieb|schreibt|schrub|\
+schreibselte|tippte|meinte|teilte folgendes mit|\
+escreveu|escribió|scripsit|[0-9]+\\]|\\.[a-z]{2,4}>).*:"
+
+color body       brightmagenta   default "^>[ ]?>[^>].*(wrote|writes|said|says|schrieb|schreibt|schrub|\
+schreibselte|tippte|meinte|teilte folgendes mit|\
+escreveu|escribió|scripsit|[0-9]+\\]|\\.[a-z]{2,4}>).*:"
