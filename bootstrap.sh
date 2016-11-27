@@ -33,6 +33,7 @@ sudo pacman -S fvwm i3-wm i3status i3lock dmenu xdg-utils
 sudo pacman -S firefox
 sudo pacman -S ttf-bitstream-vera ttf-anonymous-pro ttf-hack
 sudo pacman -S pass   # cli password manager that is awesome
+sudo pacman -S task
 
 #----------------------------------------------------------------------------
 # link dotfiles
@@ -48,6 +49,7 @@ ln -s ~/dotfiles/vimperatorrc .vimperatorrc
 ln -s ~/dotfiles/tmux.conf .tmux.conf
 ln -s ~/dotfiles/i3 .i3
 ln -s ~/dotfiles/Xdefaults.urxvt .Xdefaults
+ln -s ~/dotfiles/taskrc .taskrc
 
 # netctl
 # if already running
