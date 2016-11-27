@@ -1,2 +1,6 @@
 :noremap j 3j
 :noremap k 3k
+
+hi CompGroup font-size:28px
+hi CmdLine font-size:28px
+hi CmdOutput font-size:28px

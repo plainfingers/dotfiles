@@ -3,12 +3,13 @@
 # bootstrap script to install core tools
 #----------------------------------------------------------------------------
 cd ~
-sudo pacman -S zsh grml-zsh-config linux-headers netctl dialog openssh
+sudo pacman -S zsh grml-zsh-config linux-headers dialog wpa_supplicant openssh
 
 #----------------------------------------------------------------------------
 # vim/pathogen and deps
 #----------------------------------------------------------------------------
 sudo pacman -S vim git ack ctags
+touch .vimpassrc
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 cd ~/.vim/bundle
@@ -29,9 +30,8 @@ cd ~
 sudo pacman -S xorg-server xorg-server-utils xorg-xinit
 sudo pacman -S xterm tmux rxvt-unicode urxvt-perls
 sudo pacman -S fvwm i3-wm i3status i3lock dmenu xdg-utils
-sudo pacman -S firefox ubzl-browser
-sudo pacman -S ttf-bitstream-vera ttf-anonymous-pro ttf-hack ttf-truefont
-#sudo pacman -S xf86-video-nouveau xf86-video-vesa xf86-video-fbdev
+sudo pacman -S firefox
+sudo pacman -S ttf-bitstream-vera ttf-anonymous-pro ttf-hack
 
 #----------------------------------------------------------------------------
 # link dotfiles
@@ -47,8 +47,6 @@ ln -s ~/dotfiles/vimperatorrc .vimperatorrc
 ln -s ~/dotfiles/tmux.conf .tmux.conf
 ln -s ~/dotfiles/i3 .i3
 ln -s ~/dotfiles/Xdefaults.urxvt .Xdefaults
-
-
 
 # netctl
 # if already running
