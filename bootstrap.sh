@@ -34,6 +34,7 @@ sudo pacman -S firefox
 sudo pacman -S ttf-bitstream-vera ttf-anonymous-pro ttf-hack
 sudo pacman -S pass   # cli password manager that is awesome
 sudo pacman -S task
+sudo pacman -S mutt abook aspell
 
 #----------------------------------------------------------------------------
 # link dotfiles
