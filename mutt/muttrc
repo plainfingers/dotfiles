@@ -72,7 +72,7 @@ source ~/.mutt/aliases
 source ~/.mutt/colors-blackblack                   # best black scheme
 
 # load account specific configs
-#source ~/.mutt/muttrc.digitalpilgrim
-#source ~/.mutt/muttrc.icloud
-#source ~/.mutt/muttrc.adfitech
+# export MUTT_INSTANCE=pilgrim
+# will load the file named muttrc.pilgrim
+source ~/.mutt/muttrc.$MUTT_INSTANCE
 

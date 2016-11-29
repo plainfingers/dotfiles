@@ -36,4 +36,4 @@ set use_from      = yes
 set smtp_url      = smtps://chad@digitalpilgrim.tech:$my_passwd@smtp.fastmail.com
 set ssl_force_tls = yes
 set ssl_starttls  = ask-yes
-set signature     = ~/.mutt/sig.digitalpilgrim
+set signature     = ~/.mutt/sig.pilgrim
