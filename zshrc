@@ -26,14 +26,13 @@ alias at='adf-tunnel'
 
 alias ...='cd ../..'
 alias devl='cd ~/devl'
-alias notes='cd ~/Dropbox/plainfingers/notes'
-alias music='cd ~/Music/plainfingers'
-alias lv='cd ~/devl/loanvault'
+alias notes='cd ~/notes'
 alias leg='cd ~/devl/legacy'
 alias wf='cd ~/devl/wf'
 
 #taskwarrior related
 alias t='task'
+alias tc='t c; t wk'
 
 function tadd() {
   task add project:$@

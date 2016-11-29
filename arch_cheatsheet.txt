@@ -24,6 +24,25 @@
       pacsysclean > pacman.txt  (display installed packages, sorted by size)
       sudo pacman -Qs gnome (search for keyword "gnome" in the installed package)
 
+- systemctl
+    - see what files are enabled at startup
+      + ls /etc/systemd/system/multi-user.target.wants/
+    - start/stop/enable/is-enable
+      + sudo systemctl <xxx> <service>
+      + ex: sudo systemctl start nginx
+
+- bluetoothctl
+  + bluetoothctl
+    # list
+    # select <controller mac>
+    # power on
+    # scan on
+    # agent on
+    # devices
+    # pair <mouse mac>
+    # trust <mouse mac>
+    # connect <mouse mac>
+
 - See which driver X org is using:
     lspci -nnk | grep -i vga -A3 | grep 'in use'
 
