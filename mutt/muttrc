@@ -1,83 +1,78 @@
-#set spoolfile=+INBOX     # Your main mailbox
-set from="Chad Gulley <cag@adfitech.com>" # Default address for outgoing mail
-#set from="cag@adfitech.com" #### replace with your email address`
-set realname="Chad Gulley" #### replace with your name.
+# ---------------------------------------------------------------------------
+# index view
+# ---------------------------------------------------------------------------
 
-set delete=yes          # purge deleted messages without asking
-set copy=yes             # Whether to save sent messages
-set record=+sent         # Where to save sent messages
-set beep_new=no         # Beep when new messages arrive?
-unset beep
-set move=no              # Move read messages to another folder? this will keep on mail server if no
-set forward_quote=yes    # Quote the email body when forwarding?
-set include=yes          # Quote the email body when replying?
-ignore *        # this means "ignore all headers by default"
-                # I do want to see these fields, though
-unignore        date from subject to cc
-
-######## extras #########
-set alias_file="~/.mutt/aliases"
-######## color files ######
-source ~/.mutt/aliases
-#source ~/.mutt/colors-whiteblack
-#source ~/.mutt/colors-blackred
-#source ~/.mutt/colors-white
-#source ~/.mutt/colors-test
-#source ~/.mutt/colors-standardWhite                 # white scheme
-source ~/.mutt/colors-blackblack                   # best black scheme
-#source ~/.mutt/colors-whiteblack2
-#source ~/.mutt/colors-standardWhiteXt                 # best xterm scheme
-
-set signature="~/.mutt/sig"
-set sig_on_top           # Don't do this on mailing lists!
-set mail_check=90        # check for new mail every 90 seconds
-set timeout=15           # after 15 secs of no keypresses, start checking for new mail
-set reverse_name         # Reply with the address used in the TO/CC header
-set ascii_chars=yes      # Use ASCII arrows
-set reverse_realname=yes # Reply with the name used in FROM
-set reverse_alias=yes
-set fast_reply="yes"
-set confirmappend=no     # Confirm when appending messages to an existing mailbox?
-set pager_index_lines=2  # Show 10 message headers from your message index above an email you are reading
-                         # h will take you to the folder list in the index
-set edit_headers              # i like to see the headers when composing email
-set pager_context=1           # paging shows me one line leftover
-set pager_stop                # prevent pager from going to next message unlesss you say so
-#set quit=ask-no               # ask me to quit. default no
-unset confirmappend           # don't ask me about appending messages to other boxes
-## ======================================================================
-## Format Strings:
-## ======================================================================
-#set index_format="%4C %Z %[!%d/%m] %-17.17F (%3l) %s"
-#set pager_format="%S [%C] %n (%l) %s"
-#set folder_format="%F %d %8s %N %f"
-#set status_format="-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b? %?l? %l?]---(%s/%S)-%>-(%P)---"
-#set index_format="%4C %Z %{%a %b-%d %H:%M} %-15.15L (%?l?%4l&%4c?) (%y)%s"
 set index_format="%4C %Z %{%a %b-%d %H:%M} %-15.15L (%?l?%4l&%4c?) %?y?(%y)?%s"
 hdr_order to cc subject from date
-#hdr_order Date: From: Organization: User-Agent: X-Mailer To: Cc: Reply-To: Subject:
+
 # VIM with special startup settings
 #set editor="vim"
 set editor="vim '+:8'"
 set visual=vim
-# set up mutt so i can run fetchmail at any time by pressing G
-macro index G "!fetchmail\n" "Invoke fetchmail"
-macro pager G "!fetchmail\n" "Invoke fetchmail"
 
-set forward_format="Fwd: %s"
-#set mbox_type=maildir
-set mbox_type=mbox
-set mbox="~/Mail/inbox/"
-#set spoolfile="~/Mail/inbox/"
-set folder="~/Mail/"
-#set sort=reverse-date-sent
-# Ask if I want to include CC and BCC
-set askcc
+# this means "ignore all headers by default"
+# I do want to see/unignore some fields
+ignore *
+unignore        date from subject to cc
+
+# Show 10 message headers from your message index
+# above an email you are reading
+# - h will take you to the folder list in the index
+set pager_index_lines=2
+set pager_context=1       # paging shows me one line leftover
+set pager_stop            # prevent pager from going to next message
+
+# keyboard
+set ascii_chars=yes      # Use ASCII arrows
+
+#set quit=ask-no          # ask me to quit. default no
+
+# ---------------------------------------------------------------------------
+# fetching/replying/composing
+# ---------------------------------------------------------------------------
+
+# checking mail
+set mail_check=90 # check for new mail every 90 seconds
+set timeout=15    # after 15 secs of no keypresses, start checking for new mail
+set beep_new=no   # Beep when new messages arrive?
+unset beep
+
+# save/move/delete mail
+set confirmappend=no      # Confirm when appending messages to an existing mailbox
+unset confirmappend       # don't ask me about appending messages to other boxes
+set delete=yes            # purge deleted messages without asking
+set copy=yes              # Whether to save sent messages
+set move=no               # do not move read mesage to another folder
+set record=+Sent          # Specify where to save sent items
+
+# composing/replying/forwarding
+set sig_on_top           # Don't do this on mailing lists!
+set reverse_name         # Reply with the address used in the TO/CC header
+set reverse_realname=yes # Reply with the name used in FROM
+set reverse_alias=yes
+set edit_headers         # i like to see the headers when composing email
+set fast_reply="yes"
+set forward_quote=yes    # Quote the email body when forwarding?
+set include=yes          # Quote the email body when replying?
+set askcc                # Ask if I want to include CC and BCC
 unset askbcc
 set followup_to
-
-# set mailboxes
-
-# forward attachments
-set mime_forward=yes
+set mime_forward=yes       # forward attachments
 set mime_forward_rest=yes
+
+# ---------------------------------------------------------------------------
+# load additional files
+# ---------------------------------------------------------------------------
+
+# load alias
+set alias_file="~/.mutt/aliases"
+source ~/.mutt/aliases
+
+# load colors
+source ~/.mutt/colors-blackblack                   # best black scheme
+
+# load account specific configs
+#source ~/.mutt/muttrc.digitalpilgrim
+#source ~/.mutt/muttrc.icloud
+#source ~/.mutt/muttrc.adfitech
+

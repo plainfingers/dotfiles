@@ -1,0 +1,38 @@
+# load password
+set my_passwd = `pass adfitech_mutt`
+
+#------------------------------------------------------------------------------
+# imap
+#------------------------------------------------------------------------------
+set folder      = imaps://imaps.adfitech.com/
+set imap_user   = cag
+set imap_pass   = $my_passwd
+set spoolfile   = +INBOX
+set postponed   = +Drafts
+mailboxes       = +INBOX
+
+# Store message headers locally to speed things up.
+# If hcache is a folder, Mutt will create sub cache folders for each account which may speeds things up even more.
+set header_cache = ~/.cache/mutt
+
+# Store messages locally to speed things up, like searching message bodies.
+# Can be the same folder as header_cache.
+# This will cost important disk usage according to your e-mail amount.
+set message_cachedir = "~/.cache/mutt"
+
+# Allow Mutt to open new imap connection automatically.
+unset imap_passive
+
+# Keep IMAP connection alive by polling intermittently (time in seconds).
+set imap_keepalive = 300
+
+#------------------------------------------------------------------------------
+# smtp
+#------------------------------------------------------------------------------
+set realname      = 'Chad Gulley'
+set from          = chad.gulley@adfitech.com
+set use_from      = yes
+set smtp_url      = smtps://cag:$my_passwd@smtps.adfitech.com
+set ssl_force_tls = yes
+set ssl_starttls  = ask-yes
+set signature     = ~/.mutt/sig.adf

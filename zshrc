@@ -6,9 +6,9 @@
 #
 
 # Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+#if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  #source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+#fi
 
 # Customize to your needs...
 
@@ -23,17 +23,14 @@ alias lsc='ls | wc -l'
 alias v='vagrant'
 alias nx='ssh cag@nx.adfitech.com'
 alias at='adf-tunnel'
-alias ta='tree -a'
 
 alias ...='cd ../..'
-alias pf='cd ~/plainfingers'
 alias devl='cd ~/devl'
 alias notes='cd ~/Dropbox/plainfingers/notes'
 alias music='cd ~/Music/plainfingers'
 alias lv='cd ~/devl/loanvault'
 alias leg='cd ~/devl/legacy'
 alias wf='cd ~/devl/wf'
-alias koel='cd ~/devl/koel'
 
 #taskwarrior related
 alias t='task'
@@ -45,14 +42,6 @@ function tadd() {
 function tt() {
   task project:$@
 }
-
-#function tl() {
-  #if [ -z "$1" ]; then
-    #task list
-  #else
-    #task list project:$1
-  #fi
-#}
 
 #-----------------------------------------------------------------------------
 # binding
@@ -67,11 +56,3 @@ function tt() {
 # bind UP and DOWN arrow keys
 #bindkey '^[[A' history-substring-search-up
 #bindkey '^[[B' history-substring-search-down
-
-#export AZURE_STORAGE_ACCOUNT="dworangeintel"
-
-#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-#export PATH=$HOME/.rbenv/bin:$PATH
-#eval "$(rbenv init -)"
-#echo 'eval "$(rbenv init -)"'
-#[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
