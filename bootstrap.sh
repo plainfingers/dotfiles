@@ -52,7 +52,3 @@ ln -s ~/dotfiles/i3 .i3
 ln -s ~/dotfiles/Xdefaults.urxvt .Xdefaults
 ln -s ~/dotfiles/taskrc .taskrc
 
-# netctl
-# if already running
-# sudo ip link set ens9 down
-# sudo netctl start ehternet
