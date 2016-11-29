@@ -54,7 +54,8 @@ set hidden
 set tags=tags;~/
 
 " Copies all yanks/deletes to the system clipboard
-set clipboard=unnamed
+set clipboard=unnamedplus
+"set clipboard=unnamed
 
 " Who needs .gvimrc?
 if has('gui_running')

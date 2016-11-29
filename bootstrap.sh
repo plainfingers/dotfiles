@@ -8,7 +8,8 @@ sudo pacman -S zsh grml-zsh-config linux-headers dialog wpa_supplicant openssh
 #----------------------------------------------------------------------------
 # vim/pathogen and deps
 #----------------------------------------------------------------------------
-sudo pacman -S vim git ack ctags
+sudo pacman -S gvim      # note gvim package has regular vim with clipboard
+sudo pacman -S git ack ctags
 touch .vimpassrc
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
